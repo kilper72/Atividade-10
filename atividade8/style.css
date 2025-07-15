@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: left;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;      
+  align-items: flex-start;     
+  gap: 2%;
+  padding: 2rem 5%;
+}
+
+.caixa {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 2rem;
+  width: 30%;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2%;
+    align-items: center;        
+  }
+  .caixa {
+    width: 100%;
+    margin-bottom: 0;
+    max-width: 500px;           
+  }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+  }
+    main {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;        
+    }
+  .caixa {
+    font-size: 0.95rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  header, footer {
+    text-align: center;
+    padding: 1rem 0;
+    }
