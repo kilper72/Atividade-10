@@ -24,9 +24,11 @@ h1 {
   font-size: 1.2rem;
   text-align: center;
   min-width: 150px;
+  width: 30%;
+  box-sizing: border-box;
 }
 
-/* Tablet: cards em coluna */
+
 @media (max-width: 768px) {
   .produtos {
     flex-direction: column;
@@ -40,12 +42,19 @@ h1 {
   }
 }
 
-/* Celular: fonte menor */
 @media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+  }
   h1 {
     font-size: 1.3rem;
+    text-align: center;
   }
-}
+  .produtos {
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
   .card {
     font-size: 1rem;
     padding: 1rem;
